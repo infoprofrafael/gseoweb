@@ -2,11 +2,12 @@
     position: fixed;
 }
 
-.cont-body {
-    margin-top: 12vh;
+.cont_body {
+    margin-top: 7vh;
+    
 }
-
-/* 
-.equipe img {
-    max-width: 180px;
-} */
+.contservices{
+    border: 15px solid red;
+    margin: 15px;
+    
+}
