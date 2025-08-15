@@ -6,8 +6,26 @@
     margin-top: 7vh;
     
 }
+
 .contservices{
-    border: 15px solid red;
-    margin: 15px;
+    /* border: 3px solid rgb(185, 106, 2); */
+    /* margin:0 2px; */
     
+    
+}
+
+@media (min-width:640px) {
+    
+.contservices{
+    margin:0 15px;
+    
+}
+}
+
+@media (min-width:768px) {
+    
+.contservices{
+    margin:0 25px;
+    
+}
 }
