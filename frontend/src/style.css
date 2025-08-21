@@ -1,0 +1,26 @@
+.bar-nav{
+    position: fixed;
+}
+
+.cont_body {
+    margin-top: 7vh;
+    
+}
+
+
+
+@media (min-width:640px) {
+    
+.contservices{
+    margin:0 15px;
+    
+}
+}
+
+@media (min-width:768px) {
+    
+.contservices{
+    margin:0 25px;
+    
+}
+}
