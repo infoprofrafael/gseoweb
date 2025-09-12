@@ -3,24 +3,32 @@
 <!-- https://flowbite.com/ -->
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Inserindo o TailWind via Flowbite ver 2.5.2 -->
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/style.css">
+<!--      
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+    
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/style.css">
+    
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
-    <script src="./src/js/head.js"></script>
+   
+     
     <title>Guimarães SEO+Web</title>
 </head>
 
-<body>
-    <header>
+    <body>
+      
+        <header>
         <nav
-            class="sticky-top bar-nav bg-white dark:bg-gray-900 w-full top-0 border-b border-gray-200 dark:border-gray-600">
+            class="sticky-top bar-nav bg-white dark:bg-gray-900 w-full top-0 border-b border-gray-200 dark:border-gray-600 z-10">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between x-auto p-4">
                 <a href="#home" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <div class="img-logo">
@@ -92,14 +100,16 @@
     </header>
     <main>
         <!-- ABOUT -->
-        <section id="home" class=" mt-0 pt-2 bg-white dark:bg-gray-900">
+        <section id="home" class="mt-0 pt-2 bg-white dark:bg-gray-900">
             <div class="gap-16 items-center py-3 px-5 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                <div class="lg:mt-5  pl-3 font-light text-gray-500 sm:text-lg dark:text-gray-400" style="@media (max-width:450px) {
+                <div class=" homeanime lg:mt-5  pl-3 font-light text-gray-500 sm:text-lg dark:text-gray-400" style="@media (max-width:450px) {
                     padding-left: 0;
                 }">
                     <br>
                     <!--  -->
-                    <h2 class="animate-pulse homeanime my-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"> Sua Empresa
+                    <h2 id="titleSuaEmp"
+                        class="pt-10 animate-pulse my-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+                        Sua Empresa
                         Online!
                     </h2>
                     <p id="descriptionText" class="mb-4">
@@ -112,7 +122,7 @@
                     </p>
 
                 </div>
-                <div class="grid grid-cols-2 gap-4 mt-8">
+                <div class="imgsCol grid grid-cols-2 gap-4 mt-8">
                     <img class="w-full rounded-lg" src="./src/img/QuemSouEu3_proporcional_site.png"
                         alt="CEO Rafael Guimarães">
                     <img class="mt-4 w-full lg:mt-10 rounded-lg"
@@ -127,7 +137,7 @@
 
         <!-- Sectio Flowbite "Default hero section - Conheça nossas Soluções" -->
         <section class="bg-white dark:bg-gray-900">
-            <div class="py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-1 lg:px-12">
+            <div id="solutions" class=" animarCss py-2 px-4 mx-auto max-w-screen-xl text-center lg:py-1 lg:px-12">
 
                 <h1
                     class="cont_body mt-1 mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
@@ -139,37 +149,39 @@
 
                 </p>
 
-                
-            
-                
+
+
+
             </div>
         </section>
 
-      
+
         <!-- SERVICES -->
         <section id="services" class="bg-white dark:bg-gray-900">
-            <div class=" border border-blue-600 shadow-xl shadow-xl dark:border-white 
+            <div id="serviceborder" class="animarCss border border-blue-600 shadow-xl shadow-xl dark:border-white 
               py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
                 <span class="text-blue-700 dark:text-blue-500 ">
                     Nossos Serviços
                 </span>
                 <div class=" text-center max-w-screen-lg mb-8 lg:mb-16">
                     <h2 class="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
-                        Criado para <span class="text-blue-700 dark:text-blue-500">Profissionais</span> que querem crescer e se destacarem!
+                        Criado para <span class="text-blue-700 dark:text-blue-500">Profissionais</span> que querem
+                        crescer e se destacarem!
                     </h2>
                     <p class="pt-2 text-gray-600 sm:text-xl dark:text-gray-300 ">
-                        Aqui na <scan class="italic font-bold "> GSEOWeb™ </scan> somos especialistas em transformar sonhos em projetos e serviços
+                        Aqui na <scan class="italic font-bold "> GSEOWeb™ </scan> somos especialistas em transformar
+                        sonhos em projetos e serviços
                         em experiências visuais impactantes, criando resultados para os nossos clientes.
                     </p>
-                    
+
                 </div>
                 <div class="spaceServices">
                     <h3 class=" text-center text-2xl md:text-4xl lg:text-5xl mb-8 font-bold text-gray-900 sm:px-16 xl:px-48 dark:text-gray-100"
-                            id="cont_body_solutions">Criação e manutenção
-                        </h3>
+                        id="cont_body_solutions">Criação e manutenção
+                    </h3>
                 </div>
                 <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
-                   
+
 
                     <div>
                         <div
@@ -180,7 +192,9 @@
                             Designer Personalizado
                         </h3>
                         <p class="text-gray-700 dark:text-gray-400">
-                            Criamos <strong> layouts e artes visuais que combinam com a identidade da sua marca</strong>, tornando <span> os serviços irresistível para os seus clientes </span>. <br>
+                            Criamos <strong> layouts e artes visuais que combinam com a identidade da sua
+                                marca</strong>, tornando <span> os serviços irresistível para os seus clientes </span>.
+                            <br>
                             <strong>Tudo isso com a máxima adaptação aos diversos dispositivos existentes.</strong>
                         </p>
                     </div>
@@ -196,7 +210,7 @@
                         <p class="text-gray-700 dark:text-gray-400">
                             Suas <strong>redes sociais mais dinamicas e mordernas</strong>!
                             Tudo para garantir o máximo resultado de conversão para o seu <strong>serviço</strong>!
-                            
+
                         </p>
                     </div>
                     <div>
@@ -208,7 +222,9 @@
                             Consultoria Criativa e SEO
                         </h3>
                         <p class="text-gray-700 dark:text-gray-400">
-                            Oferecemos insights e serviços valiosos para melhorar o seu visual e melhorar o seu posicionamento nas pesquisas em sites de buscas digital <strong>"SEO"</strong> <em>(Google, Bing, Yahoo)</em>.
+                            Oferecemos insights e serviços valiosos para melhorar o seu visual e melhorar o seu
+                            posicionamento nas pesquisas em sites de buscas digital <strong>"SEO"</strong> <em>(Google,
+                                Bing, Yahoo)</em>.
                         </p>
                     </div>
                 </div>
@@ -223,9 +239,15 @@
                         Quem sou eu?
                     </h2>
                     <p class="font-light text-gray-700 lg:mb-16 sm:text-xl dark:text-gray-400">
-                        <em><strong> Rafael Guimarães</strong></em> é formado em <scan> Técnico em Informática</scan>, graduado em Matemática, pós graduado ensino da matemática e Tecnólogo em Análise e Desenvolvimento de Sistemas. <br>
+                        <em><strong> Rafael Guimarães</strong></em> é formado em <scan> Técnico em Informática</scan>,
+                        graduado em Matemática, pós graduado ensino da matemática e Tecnólogo em Análise e
+                        Desenvolvimento de Sistemas. <br>
                         <br>
-                        <span>Profissional </span> apaixonado por <em><scan><b>programação Web</b></scan></em> e impulsionar <em><scan><b>PROFISSIONAIS</b></scan></em> a crescerem e se destacarem!
+                        <span>Profissional </span> apaixonado por <em>
+                            <scan><b>programação Web</b></scan>
+                        </em> e impulsionar <em>
+                            <scan><b>PROFISSIONAIS</b></scan>
+                        </em> a crescerem e se destacarem!
 
                     </p>
                 </div>
@@ -245,15 +267,17 @@
                             </h3>
                             <span class="text-gray-700 dark:text-gray-400">CEO & Web Developer</span>
                             <p class="mt-3 mb-4 font-light text-gray-700 dark:text-gray-400">
-                                Rafael Guimarães é fundador da <em><strong><span>GSEOWeb™</span></strong></em> e responsável pela criação de sonhos em forma de site e destacar o seus serviços na Web.
+                                Rafael Guimarães é fundador da <em><strong><span>GSEOWeb™</span></strong></em> e
+                                responsável pela criação de sonhos em forma de site e destacar o seus serviços na Web.
                             </p>
                             <ul class="flex space-x-4 sm:mt-0">
                                 <li>
-                                    
+
                                 </li>
 
                                 <li>
-                                    <a href="https://github.com/infoprofrafael" target="_blank" class="text-gray-700 hover:text-gray-900 dark:hover:text-white">
+                                    <a href="https://github.com/infoprofrafael" target="_blank"
+                                        class="text-gray-700 hover:text-gray-900 dark:hover:text-white">
                                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                                             <path fill-rule="evenodd"
                                                 d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
@@ -265,7 +289,7 @@
                             </ul>
                         </div>
                     </div>
-                    
+
 
 
                 </div>
@@ -277,7 +301,8 @@
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
                     Entre em contato</h2>
-                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Quer uma consultoria? <br> Precisa de detalhes sobre os nossos serviços? <br> Contate-nos! </p>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Quer uma
+                    consultoria? <br> Precisa de detalhes sobre os nossos serviços? <br> Contate-nos! </p>
                 <form action="#" class="space-y-8">
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -322,8 +347,8 @@
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="#home" class="flex items-center">
-                            <img src="./src/img/logo/GseoWeb_logo_sombra_light_2.png" class=" block dark:hidden w-32 h-auto"
-                                alt="GuimarãesSEOWeb Logo">
+                            <img src="./src/img/logo/GseoWeb_logo_sombra_light_2.png"
+                                class=" block dark:hidden w-32 h-auto" alt="GuimarãesSEOWeb Logo">
                             <img src="./src/img/logo/GseoWeb_logo_dark.png" class=" hidden dark:block w-32 h-auto"
                                 alt="GuimarãesSEOWeb Logo">
                         </a>
@@ -407,9 +432,13 @@
         </footer>
 
     </footer>
-    <script src="src/js/script.js"></script>
+     <script src="./src/js/head.js"></script>
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./src/js/animate.js"></script>
+    <script src="./src/js/script.js"></script>
     <!-- O JavaScript do flowbite -->
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script> -->
+    
 </body>
 
 </html>

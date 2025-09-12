@@ -1,32 +1,117 @@
-.bar-nav{
+ /* ====== 1) Keyframes ====== */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeRight {
+      from { opacity: 0; transform: translateX(-24px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes blurUp {
+      from { opacity: 0; filter: blur(6px); transform: translateY(12px); }
+      to   { opacity: 1; filter: blur(0);  transform: translateY(0); }
+    }
+
+    /* ====== 2) Utilitários de animação ======
+       Use .reveal + uma das variantes (ex.: .fade-up).
+       A classe .in é adicionada via JS quando o elemento entra na tela. */
+    .reveal { opacity: 0; }               /* estado inicial (oculto) */
+    .fade-up.in   { animation: fadeUp var(--dur, .8s) cubic-bezier(.22,.61,.36,1) var(--delay, 0s) both; }
+    .fade-right.in{ animation: fadeRight var(--dur, .8s) cubic-bezier(.22,.61,.36,1) var(--delay, 0s) both; }
+    .zoom-in.in   { animation: zoomIn var(--dur, .7s) cubic-bezier(.22,.61,.36,1)  var(--delay, 0s) both; }
+    .blur-up.in   { animation: blurUp var(--dur, .7s) cubic-bezier(.22,.61,.36,1)  var(--delay, 0s) both; }
+
+   
+ /* Acessibilidade: reduz movimento para quem prefere menos animação */
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1 !important; animation: none !important; }
+    }
+      
+
+
+
+.bar-nav {
     position: fixed;
+
 }
+
+/* Tentativa de animar a div toda */
+.animarCss {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+
+}
+
+.animarCss.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Deslizar da esquerda */
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-100px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* Zoom suave */
+@keyframes zoomIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+
+.animarCss.visivel2 {
+    animation: slideInRight 1s ease-in-out forwards;
+
+}
+
+#descriptionText {
+    transition: transform 1.2s;
+
+}
+
+#descriptionText:hover,
+#descriptionText:focus {
+    transform: translateX(-2px) scale(1.01);
+}
+
+.imgsCol img {
+    transition: transform 1.2s;
+
+}
+
+.imgsCol img:hover,
+.imgsCol img:focus {
+    transform: translateX(-2px) scale(1.02);
+    box-shadow: 2px 2px 15px rgb(8, 24, 114);
+
+}
+
 
 .cont_body {
     margin-top: 7vh;
-    
-}
-.homeanime h2{
-    /* animation: 2s ease-in 1s reverse running slidein; */
-    /* animation:
-  3s linear slidein,
-  3s ease-out 5s slideout; */
-}
 
-
+}
 
 @media (min-width:640px) {
-    
-.contservices{
-    margin:0 15px;
-    
-}
+
+    .contservices {
+        margin: 0 15px;
+
+    }
 }
 
 @media (min-width:768px) {
-    
-.contservices{
-    margin:0 25px;
-    
-}
+
+    .contservices {
+        margin: 0 25px;
+
+    }
 }
